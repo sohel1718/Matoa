@@ -1,0 +1,106 @@
+.news {
+    height: 100%;
+    width: 100%;
+    background: #F7F6F4;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 105px;
+    &__wrapper {
+        width: 100%;
+        max-width: 1110px;
+        &__title {
+            font-family: Taviraj;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 36px;
+            line-height: 40px;
+            letter-spacing: 0.02em;
+            color: #333333;
+            margin-bottom: 50px;
+            hr {
+                width: 10%;
+                margin-left: 0;
+                margin-top: 8px;
+                border-color: #000;
+            }
+        }
+        &__box {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            &__left {
+                &__sub-title {
+                    font-family: Taviraj;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 20px;
+                    line-height: 40px;
+                    letter-spacing: 0.02em;
+                    color: #777777;
+                    margin-bottom: 8px;
+                }
+                &__title {
+                    font-family: Taviraj;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 36px;
+                    line-height: 48px;
+                    letter-spacing: 0.02em;
+                    color: #333333;
+                    width: 100%;
+                    max-width: 350px;
+                    margin-bottom: 45px;
+                }
+                &__btn {
+                    button {
+                        background: transparent;
+                        padding: 16px 47px;
+                        outline: none;
+                        border: none;
+                        border: 2px solid #D84727;
+                        color: #D84727;
+                        font-family: Taviraj;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 16px;
+                        line-height: 27px;
+                        letter-spacing: 0.02em;
+                        cursor: pointer;
+                    }
+                }
+            }
+            &__right {
+                &__bottom {
+                    height: 100%;
+                    width: 100%;
+                    max-width: 640px;
+                    max-height: 458px;
+                    position: absolute;
+                    right: 0;
+                    margin-top: -70px;
+                    background: #F1DDC9;
+                    z-index: 1;
+                }
+                &__overlay {
+                    position: absolute;
+                    width: 640px;
+                    height: 458px;
+                    right: 0;
+                    z-index: 2;
+                    margin-top: -94px;
+                    background: no-repeat right 0% top 0% url('../../images/new-border.png');
+                }
+                &__top {
+                    position: relative;
+                    z-index: 2;
+                    img {
+                        width: 610px;
+                        height: 484px;
+                    }
+                    //margin-top: -458px;
+                }
+            }
+           
+        }
+    }
+}

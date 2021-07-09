@@ -1,0 +1,97 @@
+.footer {
+    height: 100%;
+    width: 100%;
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        &__payment {
+            display: flex;  
+            flex-wrap: wrap;
+            flex: 0 1 auto;
+            background: #DA5E42;
+            justify-content: center;
+            padding: 40px 200px 23px 200px;
+            &__option {
+                margin: 0 50px 10px 50px;
+            }
+        }
+        &__about {
+            padding: 43px 165px 75px 165px;
+            background: no-repeat left 0% bottom -40px url('../../images/border.png'),no-repeat left 0% bottom 40px url('../../images/border.png'),no-repeat right 0% top -40px url('../../images/border.png'),no-repeat right 0% top 40px url('../../images/border.png'),#D84727;
+            display: flex;
+            justify-content: center;
+            &__info {
+                margin-right: 30px;
+                &__logo {
+                    margin-bottom: 27px;
+                }
+                &__block {
+                    &__header {
+                        font-family: Taviraj;
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 20px;
+                        line-height: 34px;
+                        letter-spacing: 0.02em;
+                        color: #FFFFFF;
+                    }
+                    &__header-underline {
+                        font-family: Taviraj;
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 24px;
+                        line-height: 41px;
+                        letter-spacing: 0.02em;
+                        color: #FFFFFF;
+                        hr {
+                            width: 20%;
+                            margin-left: 0;
+                            margin-top: 0;
+                        }
+                    }
+                    &__social {
+                        display: flex;
+                       &__icons {
+                            margin-right: 25px;
+                       }
+                    }
+                    &__data {
+                        display: flex;
+                        flex-direction: column;
+                        font-family: Taviraj;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 16px;
+                        line-height: 27px;
+                        letter-spacing: 0.03em;
+                        color: #FFFFFF;
+                        margin-bottom: 27px;
+                        width: 100%;
+                        min-width: 255px;
+                        &__cols {
+                            display: flex;
+                            justify-content: space-between;
+                            #bold {
+                                font-family: Taviraj;
+                                font-style: normal;
+                                font-weight: 500;
+                                font-size: 20px;
+                                line-height: 34px;
+                                letter-spacing: 0.02em;
+                                color: #FFFFFF;
+                                width: 100%;
+                                max-width: 97px;
+                            }
+                            font-family: Taviraj;
+                            font-style: normal;
+                            font-weight: normal;
+                            font-size: 16px;
+                            line-height: 32px;
+                            letter-spacing: 0.03em;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

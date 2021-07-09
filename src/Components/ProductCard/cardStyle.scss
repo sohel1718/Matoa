@@ -1,0 +1,89 @@
+.card {
+    max-width: 204px;
+    width: 100%;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 0 24px 48px 24px;
+    &:hover > &__bottom {
+        display: flex;
+        transition: smoothing;
+    }
+    &:hover {
+        padding-bottom: 0;
+    }
+    &__product {
+        margin-top: -40px;
+        margin-bottom: 32px;
+        height: 100%;
+        width: 100%;
+        max-width: 207px;
+        max-height: 221px;
+    }
+    &__title {
+        display: flex;
+        flex-direction: column;        
+        font-family: Taviraj;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 32px;
+        color: #333333;
+        #discount {
+            font-family: Taviraj;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 24px;
+            color: #777777;
+        }
+    }
+    &__price {
+        display: flex;
+        flex-direction: column;    
+        font-family: Taviraj;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 32px;
+        color: #333333;
+        #cutPrice {
+            font-family: Taviraj;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 24px;
+            color: #777777;
+            text-decoration: line-through;
+            text-decoration-color: #D93F3F;
+        }
+    }
+    &__bottom {
+        align-items: center;
+        justify-content: space-between;
+        margin: 24px 0 16px 0;
+        display: none;
+        #btn-normal {
+            padding: 8px 36px;
+            background: #D84727;
+            border: none;
+            outline: none;
+            font-family: Taviraj;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 24px;
+            letter-spacing: 0.02em;
+            color: #FFFFFF;
+            cursor: pointer;
+        }
+        #btn-outline {
+            border: 1px solid #D84727;
+            box-sizing: border-box; 
+            background: transparent;
+            padding: 8px;
+            cursor: pointer;
+            display: flex;
+        }
+    }
+}

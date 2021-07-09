@@ -1,0 +1,34 @@
+.insta-feed {
+    height: 100%;
+    width: 100%;
+    background: #F7F6F4;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 75px;
+    &__wrapper {
+        width: 100%;
+        max-width: 1110px;
+        &__title {
+            font-family: Taviraj;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 36px;
+            line-height: 40px;
+            letter-spacing: 0.02em;
+            color: #333333;
+            margin-bottom: 40px;
+            hr {
+                width:  10%;
+                border-color: #000;
+                margin-left: 0;
+                margin-top: 8px;
+            }
+        }
+        &__feed {
+            display: flex;
+            &__post {
+                cursor: pointer;
+            }
+        }
+    }
+}

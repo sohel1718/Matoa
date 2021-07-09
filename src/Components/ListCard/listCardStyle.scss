@@ -1,0 +1,38 @@
+.list-card {
+    display: flex;
+    margin-bottom: 32px;
+    cursor: pointer;
+    &__right {
+        background-color: #F1DDC9;
+        width: 131px;
+        height: 131px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 24px;
+    }
+    &__left {
+        display: flex;
+        flex-direction: column;
+        &__title {
+            font-family: Taviraj;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 24px;
+            line-height: 32px;
+            letter-spacing: 0.02em;
+            color: #333333;
+            width: 100%;
+            max-width: 195px;
+        }
+        &__price {
+            font-family: Taviraj;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 28px;
+            line-height: 40px;
+            letter-spacing: 0.02em;
+            color: #222222;
+        }
+    }
+}
