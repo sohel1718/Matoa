@@ -1,0 +1,28 @@
+.floating-select {
+    width: 100%;
+    margin-bottom: 32px;
+    &__lable {
+        font-family: Taviraj;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 32px;
+        letter-spacing: 0.03em;
+        color: #000000;
+    }
+    .ant-select {
+        width: 100%;
+        font-family: Taviraj;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 24px;
+        letter-spacing: 0.03em;
+        color: #333333;
+        .ant-select-selector {
+            border: unset;
+            padding-left: 0;
+            border-bottom: 1px solid #333333;
+        }
+    }
+}

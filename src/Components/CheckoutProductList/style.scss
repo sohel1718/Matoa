@@ -1,0 +1,146 @@
+.checkout-list {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 0.3px solid #999999;
+    margin-bottom: 40px;
+    align-items: center;
+    &__left {
+        display: flex;
+        width: 100%;
+        margin-bottom: 40px;
+        &__image {
+            height: 100%;
+            width: 100%;
+            max-width: 144px;
+            max-height: 144px;
+            background: #F1DDC9;
+            margin-right: 32px;
+            img {
+                object-fit: contain;
+                height: 100%;
+                width: 100%;
+                max-width: 144px;
+                max-height: 144px;
+            }
+        }
+        &__detail {
+            &__title {
+                font-family: Taviraj;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 20px;
+                line-height: 24px;
+                letter-spacing: 0.02em;
+                color: #333333;
+            }
+            &__cut-price {
+                font-family: Taviraj;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 16px;
+                line-height: 24px;
+                letter-spacing: 0.02em;
+                color: #777777;
+                text-decoration: line-through;
+                text-decoration-color: #D84727;
+            }
+            &__price {
+                font-family: Taviraj;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 24px;
+                line-height: 32px;
+                letter-spacing: 0.02em;
+                color: #333333;
+                margin-bottom: 10px;
+            }
+            &__custom-message {
+                display: flex;
+                flex-direction: column;
+                #heading {
+                    font-family: Taviraj;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 16px;
+                    line-height: 24px;
+                    letter-spacing: 0.03em;
+                    color: #555555;
+                }
+                #desc {
+                    font-family: Nunito;
+                    font-style: normal;
+                    font-weight: 300;
+                    font-size: 16px;
+                    line-height: 24px;
+                    letter-spacing: 0.03em;
+                    color: #555555;
+                }
+            }
+        } 
+    }
+    &__right {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: flex-end;
+        margin-bottom: 40px;
+        &__select {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            width: 100%;
+            margin-bottom: 36px;
+            span {
+                font-family: Taviraj;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 24px;
+                /* identical to box height, or 150% */
+                letter-spacing: 0.03em;
+                color: #333333;
+                margin-bottom: 8px;
+            }
+            select {
+                outline: none;
+                cursor: pointer;
+                background: #FFFFFF;
+                border: 0.3px solid #999999;
+                box-sizing: border-box;
+                font-family: Taviraj;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 24px;
+                letter-spacing: 0.03em;
+                color: #999999;
+                width: 313px;
+                padding: 9px 0px 9px 16px;
+                .ant-select-selector {
+                    border: none;
+                }
+            }
+        }
+        &__add-cart {
+            display: flex;
+            align-items: center;
+            width: 100%;
+            justify-content: flex-end;
+            &__remove {
+                display: flex;
+                padding: 7px;
+                border: 1px solid #D84727;
+            }
+            span {
+                font-family: Taviraj;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 24px;
+                line-height: 32px;
+                letter-spacing: 0.02em;
+                color: #333333;
+                margin-right: 32px;
+            }
+        }
+    }
+}

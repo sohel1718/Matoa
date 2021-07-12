@@ -1,0 +1,67 @@
+.order-detail {
+    height: 100%;
+    width: 100%;
+    max-width: 540px;
+    max-height: 508px;
+    background-color: #fff;
+    padding: 24px 32px;
+    margin-top: 40px;
+    &__title {
+        font-family: Taviraj;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 36px;
+        line-height: 48px;
+        /* identical to box height, or 133% */
+
+        letter-spacing: 0.02em;
+
+        color: #333333;
+    }
+    &__desc {
+        border-bottom: 1px solid #333333;
+        margin-bottom: 24px;
+        display: flex;
+        font-family: Taviraj;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 60px;
+        letter-spacing: 0.03em;
+        color: #333333;
+        &__left {
+            display: flex;
+            flex-direction: column;
+            margin-right: 60px;
+            margin-top: 40px;
+            margin-bottom: 48px;
+        }
+        &__right {
+            display: flex;
+            flex-direction: column;
+            margin-top: 40px;
+            margin-bottom: 48px;
+        }
+    }
+    &__bottom {
+        &__text {
+            font-family: Taviraj;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 60px;
+            letter-spacing: 0.03em;
+            color: #333333;
+            margin-right: 88px;
+        }
+        &__price {
+            font-family: Taviraj;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 36px;
+            line-height: 60px;
+            letter-spacing: 0.03em;
+            color: #333333;
+        }
+    }
+}

@@ -1,0 +1,36 @@
+.detail-content {
+    &__wrapper {
+        &__title {
+            font-family: Taviraj;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 24px;
+            line-height: 32px;
+            letter-spacing: 0.02em;
+            color: #333333;
+            margin-bottom: 8px;
+        }
+        &__desc {
+            font-family: Nunito;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 28px;
+            letter-spacing: 0.02em;
+            color: #555555;
+            margin-bottom: 24px;
+        }
+    }
+    &__info-image {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        img {
+            height: 100%;
+            width: 100%;
+            max-width: 635px;
+            max-height: 518px;
+        }
+    }
+}

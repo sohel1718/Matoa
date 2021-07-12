@@ -1,0 +1,24 @@
+.all-detail {
+    width: 100%;
+    padding: 32px;
+    background: #fff;
+    margin-top: 40px;
+    &__title {
+        font-family: Taviraj;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 36px;
+        line-height: 48px;
+        letter-spacing: 0.02em;
+        color: #333333;
+        margin-bottom: 40px;
+    }
+    &__info {
+        display: flex;
+        justify-content: space-between;
+        &__desc {
+            text-align: start;
+        }
+    }
+}
+

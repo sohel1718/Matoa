@@ -1,0 +1,58 @@
+.product-card {
+    background-color: #fff;
+    width: max-content;
+    padding: 24px;
+    &__discount-tag {
+        background: #D84727;
+        font-family: Taviraj;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        color: #FFFFFF;
+        padding: 5px 17px;
+        width: fit-content;
+        margin: -40px 0 24px 0;
+        float: right;
+    }
+    &__image {
+        max-width: 221px;
+        max-height: 221px;
+        height: 100%;
+        width: 100%;
+        margin-bottom: 24px;
+        img {
+            height: 100%;
+            width: 100%;
+            object-fit: contain;
+        }
+    }
+    &__title {
+        margin: 12px 0;
+        font-family: Taviraj;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 32px;
+        color: #333333;
+    }
+    &__cut-price {
+        font-family: Taviraj;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 24px;
+        color: #777777;
+        text-decoration: line-through;
+        text-decoration-color: #D93F3F;
+
+    }
+    &__price {
+        font-family: Taviraj;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 32px;
+        color: #333333;
+    }
+}

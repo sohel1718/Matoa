@@ -1,0 +1,98 @@
+.checkout {
+    height: 100%;
+    width: 100%;
+    min-width: 1110px;
+    &__wrapper {
+        &__bottom {
+            &__info {
+                display: flex;
+                justify-content: space-between;
+                &__left {
+                    span {
+                        font-family: Taviraj;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 20px;
+                        line-height: 24px;
+                        /* identical to box height, or 120% */
+                        letter-spacing: 0.02em;
+                        color: #333333;
+                        margin-right: 32px;
+                    }
+                    #discount {
+                        font-weight: 500;
+                        color: #01522D;
+                    }
+                    input {
+                        margin-right: 16px;
+                        outline: none;
+                        background: #FFFFFF;
+                        border: 0.3px solid #333333;
+                        box-sizing: border-box;
+                        font-family: Taviraj;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 20px;
+                        line-height: 24px;
+                        letter-spacing: 0.02em;
+                        color: #333333;
+                    }
+                }
+                &__right {
+                    display: flex;
+                    align-items: center;
+                    span {
+                        font-family: Taviraj;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 20px;
+                        line-height: 24px;
+                        letter-spacing: 0.02em;
+                        color: #333333;
+                        margin-right: 32px;
+                    }
+                   &__price-detail {
+                        &__cut-price {
+                            font-family: Taviraj;
+                            font-style: normal;
+                            font-weight: normal;
+                            font-size: 16px;
+                            line-height: 24px;
+                            letter-spacing: 0.02em;
+                            color: #777777;
+                        }
+                        &__price {
+                            font-family: Taviraj;
+                            font-style: normal;
+                            font-weight: 600;
+                            font-size: 24px;
+                            line-height: 32px;
+                            letter-spacing: 0.02em;
+                            color: #333333;
+                        }
+                   }
+                }    
+            }
+            &__btn {
+                height: 100%;
+                width: 100%;
+                margin-top: 26px;
+                button {
+                    height: 100%;
+                    width: 100%;
+                    padding: 22px 495px;
+                    background: #D84727;
+                    outline: none;
+                    border: none;
+                    font-family: Taviraj;
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 24px;
+                    line-height: 24px;
+                    letter-spacing: 0.02em;
+                    color: #FFFFFF;
+                }
+            }
+        }
+    }
+}
