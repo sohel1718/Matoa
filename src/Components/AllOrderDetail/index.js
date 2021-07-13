@@ -9,11 +9,11 @@ const AllOrderDetail = () => {
             <div className="all-detail__info">
                 <div className="all-detail__info__heading">Order Number</div>
                 <div className="all-detail__info__desc">
-                    <div className="all-detail__desc__number">
-                        <span>MTAWEB-3A86D4DB</span>
-                        <span>Copy</span>
+                    <div className="all-detail__info__desc__number">
+                        <span id="orderNum">MTAWEB-3A86D4DB</span>
+                        <span id="copy">Copy</span>
                     </div>
-                    <div className="all-detail__desc__tip">
+                    <div className="all-detail__info__desc__tip">
                         Always remember Order Number for easy tracking
                     </div>
                 </div>
@@ -27,11 +27,11 @@ const AllOrderDetail = () => {
                 <div className="all-detail__info__desc">
                     <div className="all-detail__info__desc__items">
                         <span>Way Kambas Mini Ebony</span>
-                        <span> 2 x IDR 1.024.000</span>
+                        <span id="pInfo"> 2 x IDR 1.024.000</span>
                     </div>
                     <div className="all-detail__info__desc__items">
                         <span>Way Kambas Mini Ebony</span>
-                        <span> 2 x IDR 1.024.000</span>
+                        <span id="pInfo"> 2 x IDR 1.024.000</span>
                     </div>
                 </div>
             </div>

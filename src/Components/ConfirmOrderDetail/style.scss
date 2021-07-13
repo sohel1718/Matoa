@@ -1,0 +1,110 @@
+.confirm-detail {
+    height: 100%;
+    width: 100%;
+    max-width: 540px;
+    background: #fff;
+    padding: 32px;
+    margin-top: 40px;
+    &__estimate {
+        display: flex;
+        align-items: center;
+        margin-bottom: 32px;
+        &__info {
+            display: flex;
+            align-items: center;
+            margin-right: 42px;
+            font-family: Nunito;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 32px;
+            letter-spacing: 0.02em;
+            color: #333333;
+            span {
+                margin-left: 11px;
+            }
+        }
+    }
+    &__product {
+        margin-bottom: 13px;
+        &__details {
+            display: flex;
+            flex-direction: column;
+            #name {
+                font-family: Taviraj;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 20px;
+                line-height: 32px;
+                letter-spacing: 0.02em;
+                color: #333333;
+
+            }
+            #quantity {
+                font-family: Nunito;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 16px;
+                line-height: 24px;
+                letter-spacing: 0.02em;
+                color: #777777;
+            }
+        }
+    }
+    &__price-info {
+        border-bottom: 1px solid #999999;
+        margin-bottom: 16px;
+        &__data {
+            display: flex;
+            font-family: Taviraj;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 48px;
+            letter-spacing: 0.03em;
+            color: #333333;
+            #name {
+                width: 100%;
+                max-width: 250px;
+            }
+        }
+    }
+    &__total {
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid #999999;
+        margin-bottom: 16px;
+        #name {
+            font-family: Taviraj;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 60px;
+            letter-spacing: 0.03em;
+            color: #333333;
+        }
+        #price {
+            font-family: Taviraj;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 36px;
+            line-height: 60px;
+            letter-spacing: 0.03em;
+            color: #333333;
+        }
+    }
+    &__address {
+        display: flex;
+        font-family: Taviraj;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 32px;
+        letter-spacing: 0.02em;
+        color: #333333;
+        #name {
+            width: 100%;
+            max-width: 220px;
+        }
+    }
+}

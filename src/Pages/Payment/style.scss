@@ -4,6 +4,27 @@
     max-width: 1110px;
     margin: 0 auto;
     &__container {
+        &__bottom {
+            &__btn {
+                margin-top: 40px;
+                width: 100%;
+                text-align: end;
+                button {
+                    cursor: pointer;
+                    outline: none;
+                    border: none;
+                    padding: 15px 37px;
+                    font-family: Taviraj;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 20px;
+                    line-height: 32px;
+                    letter-spacing: 0.03em;
+                    color: #FFFFFF;
+                    background: #D84727;
+                }
+            }
+        }
         &__wrapper {
             display: flex;
             justify-content: space-between;
@@ -46,6 +67,44 @@
             }
             &__left {
                 width: 100%;
+                &__timer-box {
+                    width: 100%;
+                    max-width: 540px;
+                    background: #fff;
+                    padding: 24px 32px;
+                    margin-top: 32px;
+                    &__title {
+                        display: flex;
+                        #main-title {
+                            font-family: Taviraj;
+                            font-style: normal;
+                            font-weight: 600;
+                            font-size: 36px;
+                            line-height: 48px;
+                            letter-spacing: 0.02em;
+                            color: #333333;
+                            margin-right: 81px;
+                        }
+                        #timer {
+                            font-family: Taviraj;
+                            font-style: normal;
+                            font-weight: 600;
+                            font-size: 24px;
+                            line-height: 48px;
+                            letter-spacing: 0.02em;
+                            color: #D93F3F;
+                        }
+                    }
+                    &__desc {
+                        font-family: Nunito;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 16px;
+                        line-height: 32px;
+                        letter-spacing: 0.03em;
+                        color: #333333;
+                    }
+                }
             }
         }
     }

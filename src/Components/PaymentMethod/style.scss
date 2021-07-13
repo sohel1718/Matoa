@@ -1,0 +1,55 @@
+.payment-method {
+    height: 100%;
+    width: 100%;
+    background: #fff;
+    padding: 24px 32px;
+    margin-top: 32px;
+    &__title {
+        font-family: Taviraj;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 36px;
+        line-height: 48px;
+        letter-spacing: 0.02em;
+        color: #333333;
+        margin-bottom: 40px;
+    }
+    &__wrapper {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        flex-wrap: wrap;
+        flex: 0 1 auto;
+        &__method {
+            margin-right: 60px;
+            &__img {
+                display: flex;
+                margin-left: 40px;
+                img {
+                    margin-right: 33px;
+                }
+            }
+            &__name {
+                display: flex;
+                align-items: center;
+                width: 100%;
+                span {
+                    font-family: Taviraj;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 20px;
+                    line-height: 32px;
+                    letter-spacing: 0.02em;
+                    color: #333333;
+                }
+            }
+            input {
+                height: 24px;
+                width: 24px;
+                margin-right: 16px;
+                border: 1px solid #333333;
+                box-sizing: border-box;
+            }
+        }
+    }
+}
