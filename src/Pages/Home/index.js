@@ -1,10 +1,10 @@
-import Banner from '../../Components/Banner';
-import FeaturedProduct from '../../Components/FeaturedProduct';
-import MonthlyDeals from '../../Components/MonthlyDeals';
-import RecentNews from '../../Components/RecentNews';
-import ProductList from '../../Components/ProductList';
-import Testimonal from '../../Components/Testimonal';
-import InstagramFeed from '../../Components/InstagramFeed';
+import Banner from './Banner';
+import FeaturedProduct from './FeaturedProduct';
+import MonthlyDeals from './MonthlyDeals';
+import RecentNews from './RecentNews';
+import ProductList from './ProductList';
+import Testimonal from './Testimonal';
+import InstagramFeed from './InstagramFeed';
 import './homeStyle.scss';
 
 const Home = () => {

@@ -1,0 +1,42 @@
+.monthly {
+    height: 100%;
+    width: 100%;
+    background: #F7F6F4;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 110px;
+    @media only screen and (max-width: 1100px) {
+        padding: 0 24px 110px 24px;
+    }
+    &__container {
+        display: flex;
+        width: 100%;
+        max-width: 1110px;
+        &__wrapper {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            &__title {
+                font-family: Taviraj;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 36px;
+                line-height: 40px;
+                letter-spacing: 0.02em;
+                color: #333333;
+                margin-bottom: 100px;
+                hr {
+                    width: 12%;
+                    margin-left: 0;
+                    margin-top: 8px;
+                    border-color: #000;
+                }
+            }
+            &__product {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+        }
+    }
+}

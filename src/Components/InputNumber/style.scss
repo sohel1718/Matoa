@@ -26,5 +26,8 @@
         background: #D84727;
         padding: 7px;
         cursor: pointer;
+        &:active {
+            background: #c7310f;
+        }
     }
 }

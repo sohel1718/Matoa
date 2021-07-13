@@ -1,6 +1,6 @@
-.content {
-    height: 100vh;
-    padding-top: 50px;
-    background: #F7F6F4;
-    padding-bottom: 3000px;
+.layout {
+    &__content {
+        padding-top: 50px;
+        background: #F7F6F4;
+    }
 }

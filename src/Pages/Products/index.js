@@ -1,5 +1,5 @@
-import ProductView from '../../Components/ProductView';
-import ProductDetail from '../../Components/ProductDetail';
+import ProductView from './ProductView';
+import ProductDetail from './ProductDetail';
 import './style.scss';
 import ProductCardV2 from '../../Components/ProductCardV2';
 
@@ -10,19 +10,23 @@ const ProductPage = () => {
                 <ProductView />
             </div>
             <div className="product-page__detail">
-                <ProductDetail />
+                <div className="product-page__detail__wrapper">
+                    <ProductDetail />
+                </div>
             </div>
             <div className="product-page__related-products">
-                <div className="product-page__related-products__title">
-                    <span>Related Products</span>
-                    <hr />
-                </div>
-                <div className="product-page__related-products__wrapper">
-                    <ProductCardV2 />
-                    <ProductCardV2 />
-                    <ProductCardV2 />
-                    <ProductCardV2 />
-                </div>
+               <div className="product-page__related-products__container">
+                <div className="product-page__related-products__container__title">
+                        <span>Related Products</span>
+                        <hr />
+                    </div>
+                    <div className="product-page__related-products__container__wrapper">
+                        <ProductCardV2 />
+                        <ProductCardV2 />
+                        <ProductCardV2 />
+                        <ProductCardV2 />
+                    </div>
+               </div>
             </div>
         </div>
     )

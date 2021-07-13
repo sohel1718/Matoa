@@ -1,15 +1,15 @@
 import { useState } from 'react';
-import Progress from '../../Components/Progress';
-import OrderDetail from '../../Components/OrderDetail';
-import BillingAddress from '../../Components/BillingAddress';
-import AllOrderDetail from '../../Components/AllOrderDetail';
-import PaymentMethod from '../../Components/PaymentMethod';
-import ConfirmOrder from '../../Components/ConfirmOrder';
-import ConfirmOrderDetail from '../../Components/ConfirmOrderDetail';
+import Progress from './Progress';
+import OrderDetail from './OrderDetail';
+import BillingAddress from './BillingAddress';
+import AllOrderDetail from './AllOrderDetail';
+import PaymentMethod from './PaymentMethod';
+import ConfirmOrder from './ConfirmOrder';
+import ConfirmOrderDetail from './ConfirmOrderDetail';
 import './style.scss';
 
 const Payment = () => {
-    const [current, setCurrent] = useState(2);
+    const [current, setCurrent] = useState(0);
 
     return (
         <div className="payment">
@@ -41,11 +41,7 @@ const Payment = () => {
                         {
                             current === 0 && 
                             <div className="payment__container__wrapper__right__billing">
-                            <BillingAddress />
-                                <div className="payment__container__wrapper__right__billing__btn">
-                                    <button id="outline">Continue Shopping</button>
-                                    <button id="filled">Place My Order</button>
-                                </div>
+                                <BillingAddress />
                             </div>
                         }
                         {

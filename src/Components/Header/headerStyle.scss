@@ -4,6 +4,9 @@
     background: #F7F6F4;
     display: flex;
     justify-content: center;
+    position: sticky;
+    top: 0;
+    z-index: 3;
     &__wrapper {
         display: flex;
         align-items: center;
@@ -37,14 +40,20 @@
                         }
                     }
                 }
+                &:hover > &__cart {
+                    path {
+                        fill: #000;
+                    }
+                }
+                &__circle {
+                   background: #F1DDC9;
+                   width: 46px;
+                   height: 46px;
+                   border-radius: 50%;
+                }
                 &__cart {
                     position: absolute;
-                    padding: 11px 13.4px;
-                    &:hover {
-                            path {
-                                fill: #000 !important;
-                            }
-                    }
+                    margin: 11px 13.4px;
                 }
             }
         }

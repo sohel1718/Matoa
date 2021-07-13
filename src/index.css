@@ -16,3 +16,8 @@ code {
   font-family: taviraj;
   src: url('/src/fonts/Taviraj-Regular.ttf');
 }
+
+@font-face {
+  font-family: Nunito;
+  src: url('/src/fonts/Nunito-Regular.ttf');
+}

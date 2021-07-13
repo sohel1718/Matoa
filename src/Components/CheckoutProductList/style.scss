@@ -99,14 +99,8 @@
                 /* identical to box height, or 150% */
                 letter-spacing: 0.03em;
                 color: #333333;
-                margin-bottom: 8px;
             }
-            select {
-                outline: none;
-                cursor: pointer;
-                background: #FFFFFF;
-                border: 0.3px solid #999999;
-                box-sizing: border-box;
+            .ant-select {
                 font-family: Taviraj;
                 font-style: normal;
                 font-weight: 500;
@@ -115,11 +109,18 @@
                 letter-spacing: 0.03em;
                 color: #999999;
                 width: 313px;
-                padding: 9px 0px 9px 16px;
-                .ant-select-selector {
-                    border: none;
-                }
+                height: 42px;
+                width: 313px;
             }
+            .ant-select-single:not(.ant-select-customize-input) {
+                .ant-select-selector {
+                    height: 100%;
+                    width: 100%;
+                    border: 0.3px solid #999999 !important;
+                    padding: 6px 50px 9px 16px;
+                    box-shadow: none !important;
+                }  
+            } 
         }
         &__add-cart {
             display: flex;
@@ -130,6 +131,15 @@
                 display: flex;
                 padding: 7px;
                 border: 1px solid #D84727;
+                cursor: pointer;
+                &:active {
+                    background: #c7310f;
+                    svg {
+                        path {
+                            fill: #fff;
+                        }
+                    }
+                }
             }
             span {
                 font-family: Taviraj;

@@ -1,7 +1,6 @@
 import { ReactComponent as Search } from '../../images/Search.svg';
 import { ReactComponent as User } from '../../images/User.svg';
 import { ReactComponent as Cart } from '../../images/Cart.svg';
-import { ReactComponent as ColorCircle } from '../../images/color-circle.svg';
 import './headerStyle.scss';
 
 const Header = () => {
@@ -34,7 +33,7 @@ const Header = () => {
                             <span>Log In</span>
                         </div>
                         <div className="header__wrapper__links__link">
-                                <ColorCircle />
+                                <div className="header__wrapper__links__link__circle"/>
                                 <Cart className="header__wrapper__links__link__cart" />
                         </div>
                     </div>

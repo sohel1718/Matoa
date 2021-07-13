@@ -7,6 +7,7 @@
             &__info {
                 display: flex;
                 justify-content: space-between;
+                align-items: center;    
                 &__left {
                     span {
                         font-family: Taviraj;
@@ -36,6 +37,7 @@
                         line-height: 24px;
                         letter-spacing: 0.02em;
                         color: #333333;
+                        padding: 9px 16px;
                     }
                 }
                 &__right {
@@ -91,6 +93,9 @@
                     line-height: 24px;
                     letter-spacing: 0.02em;
                     color: #FFFFFF;
+                    &:active {
+                        background: #c7310f;
+                    }
                 }
             }
         }

@@ -2,35 +2,51 @@
     &__detail {
             height: 100%;
             width: 100%;
-            max-width: 1110px;
-            margin: 0 auto;
-            margin-top: 76px;
+            padding-top: 76px;
+            display: flex;
+            justify-content: center;
+            background: #F7F6F4;
+            &__wrapper {
+                width: 100%;
+                max-width: 1110px;
+                display: flex;
+            }
     }
     &__related-products {
         height: 100%;
         width: 100%;
-        max-width: 1110px;
-        margin: 0 auto;
-        margin-top: 120px;
-        &__title {
-            font-family: Taviraj;
-            font-style: normal;
-            font-weight: 500;
-            font-size: 36px;
-            line-height: 40px;
-            letter-spacing: 0.02em;
-            color: #333333;
-            margin-bottom: 58px;
-            hr {
-                width: 13%;
-                margin-left: 0;
-                margin-top: 8px;
-                border-color: #000;
-            }
-        }
-        &__wrapper {
+        padding-top: 120px;
+        display: flex;
+        justify-content: center;
+        background: #F7F6F4;
+        &__container {
+            width: 100%;
+            max-width: 1110px;
             display: flex;
-            justify-content: space-between;
+            flex-direction: column;
+            align-content: center;
+            &__title {
+                font-family: Taviraj;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 36px;
+                line-height: 40px;
+                letter-spacing: 0.02em;
+                color: #333333;
+                margin-bottom: 58px;
+                hr {
+                    width: 13%;
+                    margin-left: 0;
+                    margin-top: 8px;
+                    border-color: #000;
+                }
+            }
+            &__wrapper {
+                display: flex;
+                justify-content: space-between;
+                padding-bottom: 97px;
+                background: #F7F6F4;
+            }
         }
         
     }

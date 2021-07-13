@@ -1,7 +1,10 @@
 import InputNumber from '../InputNumber';
+import { Select } from 'antd';
 import Watch from '../../images/Products/Watches/watch1.png';
 import { ReactComponent as Delete } from '../../images/delete.svg';
 import './style.scss';
+
+const { Option } = Select;
 
 const CheckoutProductList = () => {
 
@@ -27,10 +30,10 @@ const CheckoutProductList = () => {
             <div className="checkout-list__right">
                 <div className="checkout-list__right__select">
                     <span>Select Packaging</span>
-                    <select defaultValue="Default Packaging (Free)" onChange={handleChange}>
-                        <option value="Wooden Packaging (Rp 50.000)">Wooden Packaging (Rp 50.000)</option>
-                        <option value="Default Packaging (Free)">Default Packaging (Free)</option>
-                    </select>
+                    <Select defaultValue="Default Packaging (Free)" onChange={handleChange}>
+                        <Option value="Wooden Packaging (Rp 50.000)">Wooden Packaging (Rp 50.000)</Option>
+                        <Option value="Default Packaging (Free)">Default Packaging (Free)</Option>
+                    </Select>
                 </div>
                 <div className="checkout-list__right__add-cart">
                     <InputNumber />

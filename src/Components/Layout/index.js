@@ -10,13 +10,13 @@ const Layout = ({isAuthenticated, component: Component, ...rest}) => {
             {...rest}
             render={props => isAuthenticated && 
                 (
-                    <>
+                    <div className="layout">
                         <Header />
-                        <div className="content">
+                        <div className="layout__content">
                             <Component {...props} />
+                            <Footer />
                         </div>
-                        <Footer />
-                    </>
+                    </div>
                 )
             }
         />

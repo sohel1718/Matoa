@@ -1,10 +1,10 @@
 import { Input } from 'antd';
 import './style.scss';
-const FloatingInput = ({placeholder, onChange, value, FloatLable}) => {
+const FloatingInput = ({placeholder, onChange, value, FloatLable, ...rest}) => {
     return (
         <div className="float-input">
             <div className="float-input__lable">{FloatLable}</div>
-            <Input placeholder={placeholder} type="text" onChange={onChange} value={value} />
+            <Input {...rest} placeholder={placeholder} type="text" onChange={onChange} value={value} />
         </div>
     )
 }
