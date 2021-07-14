@@ -10,6 +10,9 @@
             background: #DA5E42;
             justify-content: center;
             padding: 40px 200px 23px 200px;
+            @media only screen and (max-width: 1168px) {
+                padding: 40px 24px 23px 24px;
+            }
             &__option {
                 margin: 0 50px 10px 50px;
             }
@@ -19,6 +22,12 @@
             background: no-repeat left 0% bottom -40px url('../../images/border.png'),no-repeat left 0% bottom 40px url('../../images/border.png'),no-repeat right 0% top -40px url('../../images/border.png'),no-repeat right 0% top 40px url('../../images/border.png'),#D84727;
             display: flex;
             justify-content: center;
+            @media only screen and (max-width: 1168px) {
+                padding: 43px 24px 75px 24px;
+                justify-content: unset;
+                flex-wrap: wrap;
+                flex: 0 1 auto;
+            }
             &__info {
                 margin-right: 30px;
                 &__logo {

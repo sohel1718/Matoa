@@ -1,53 +1,80 @@
-.product-page {
-    &__detail {
+.product-container {
+    height: 100%;
+    width: 100%;
+    margin-bottom: 100px;
+    &__wrapper {
+        display: flex;
+        margin: 0 auto;
+        max-width: 1110px;
+        width: 100%;
+        &__filter {
             height: 100%;
             width: 100%;
-            padding-top: 76px;
-            display: flex;
-            justify-content: center;
-            background: #F7F6F4;
-            &__wrapper {
-                width: 100%;
-                max-width: 1110px;
-                display: flex;
-            }
-    }
-    &__related-products {
-        height: 100%;
-        width: 100%;
-        padding-top: 120px;
-        display: flex;
-        justify-content: center;
-        background: #F7F6F4;
-        &__container {
-            width: 100%;
-            max-width: 1110px;
+            max-width: 130px;
+            margin-right: 50px;
+        }
+        &__main {
             display: flex;
             flex-direction: column;
-            align-content: center;
-            &__title {
-                font-family: Taviraj;
-                font-style: normal;
-                font-weight: 500;
-                font-size: 36px;
-                line-height: 40px;
-                letter-spacing: 0.02em;
-                color: #333333;
-                margin-bottom: 58px;
-                hr {
-                    width: 13%;
-                    margin-left: 0;
-                    margin-top: 8px;
-                    border-color: #000;
-                }
-            }
-            &__wrapper {
+            width: 100%;
+            &__header {
                 display: flex;
                 justify-content: space-between;
-                padding-bottom: 97px;
-                background: #F7F6F4;
+                align-items: center;
+                margin-bottom: 80px;
+                &__left {
+                    font-family: Taviraj;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 18px;
+                    line-height: 48px;
+                    letter-spacing: 0.02em;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    width: 100%;
+                    color: #999999;
+                }
+                &__right {
+                    display: flex;
+                    font-family: Taviraj;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 18px;
+                    color: #999999;
+                    span {
+                        margin-right: 10px;
+                    }
+                }
+            }
+            &__products {
+                display: flex;
+                width: 100%;
+                flex: 0 1 auto;
+                flex-wrap: wrap;
+                &__card {
+                    max-width: 220px;
+                    padding: 0 24px 0px 24px;
+                    margin-bottom: 100px;
+                    margin-right: 10px;
+                    .card__product {
+                        margin-bottom: 10px;
+                    }
+                    .card__title {
+                        font-size: 22px;
+                    }
+                    .card__price {
+                        font-size: 20px;
+                    }
+                    .card__bottom {
+                        margin: 10px 0 16px 0;
+                        display: flex;
+                        #btn-normal {
+                            padding: 8px 10px !important;
+                        }
+                    }
+                }
             }
         }
-        
     }
 }

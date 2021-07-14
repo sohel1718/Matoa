@@ -28,10 +28,10 @@ const Banner = () => {
                         <button id="btn-normal"><AddCart /><span>Add to cart</span></button>
                         <button id="btn-outline"><img src="/images/Logo/logo-cicil-white.png" alt="" /></button>
                     </div>
-                </div>
-                <div className="banner__wrapper__btnBottom">
+                    <div className="banner__wrapper__btnBottom">
                         <button id="btn-outline"><Arrow /></button>
                         <button id="btn-normal"><Arrow /></button>
+                    </div>
                 </div>
             </div>
             <div class="banner__cover"></div>

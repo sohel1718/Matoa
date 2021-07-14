@@ -41,7 +41,7 @@ const Payment = () => {
                         {
                             current === 0 && 
                             <div className="payment__container__wrapper__right__billing">
-                                <BillingAddress />
+                                <BillingAddress setCurrent={setCurrent} />
                             </div>
                         }
                         {
@@ -57,7 +57,7 @@ const Payment = () => {
                     <div className="payment__container__bottom">
                     <PaymentMethod />
                     <div className="payment__container__bottom__btn">
-                        <button>Proceed Payment</button>
+                        <button onClick={() => setCurrent(2)}>Proceed Payment</button>
                     </div>
                 </div>
                 }

@@ -1,9 +1,9 @@
 import {ReactComponent as Heart} from '../../images/heart.svg';
 import './cardStyle.scss'; 
 
-const ProductCard = ({product}) => {
+const ProductCard = ({product, className=""}) => {
     return (
-        <div className="card">
+        <div id={product.id} className={`card ${className}`}>
             <div className="card__product">
                 <img src={product.image} alt="" />
             </div>

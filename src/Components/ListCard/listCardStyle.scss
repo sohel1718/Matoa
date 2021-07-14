@@ -24,6 +24,9 @@
             color: #333333;
             width: 100%;
             max-width: 195px;
+            @media only screen and (max-width: 928px) {
+                font-size: 20px;
+            }
         }
         &__price {
             font-family: Taviraj;
@@ -33,6 +36,9 @@
             line-height: 40px;
             letter-spacing: 0.02em;
             color: #222222;
+            @media only screen and (max-width: 928px) {
+                font-size: 20px;
+            }
         }
     }
 }

@@ -17,6 +17,10 @@
             background: no-repeat right 0% top -18% url('../../../images/red-border.png'),no-repeat right 0% top 19% url('../../../images/light-border.png'),no-repeat right 0% top 39% url('../../../images/light-1x.png');
             background-size: 70%;
         }
+        @media only screen and (max-width: 768px) {
+            background: no-repeat right 0% top 5% url('../../../images/red-border.png'),no-repeat right 0% top 20% url('../../../images/light-border.png'),no-repeat right 0% top 25% url('../../../images/light-1x.png');
+           top: 40%;
+        }
     }
     &__wrapper {
         display: flex;
@@ -25,6 +29,12 @@
         width: 100%;
         max-width: 1110px;
         margin: 0 auto;
+        @media only screen and (max-width: 1068px) {
+            padding: 42px 16px;
+        }
+        @media only screen and (max-width: 768px) {
+            flex-direction: column;
+        }
         &__left {
             margin: 60px 47px -144px 8px;
             @media only screen and (max-width: 1068px) {
@@ -33,10 +43,12 @@
                     width: 280px;
                 } 
             }
+            @media only screen and (max-width: 768px) {
+                margin: unset;
+            }
         }
         &__right {
             width: 100%;
-            min-width: 529px;
             &__title {
                 width: 100%;
                 max-width: 450px;
@@ -90,6 +102,7 @@
                 display: flex;
                 z-index: 2;
                 position: relative;
+                margin-bottom: 20px;
                 #btn-normal {
                     margin-right: 18px;
                     padding: 14px 30px;
@@ -124,10 +137,13 @@
                     cursor: pointer;
                     width: 100%;
                     max-width: 140px;
-                    &:active {
+                    &:hover {
                         background: #c7310f;
-                        color: #fff;
                     }
+                    &:active {
+                        background: #e95a3a;
+                    }
+                   
                 }
             }
         }
@@ -135,16 +151,15 @@
             display: flex;
             align-items: flex-end;
             justify-content: flex-end;
-            margin: 0px 29px -80px 0px;
+            margin: 0 0 -80px 0;
             width: 100%;
+            padding-right: 20px;
             #btn-normal {
                 background: #D84727;
                 border: none;
                 outline: none;
-                max-height: 60px;
-                height: 100%;
-                max-width: 60px;
-                width: 100%;
+                height: 60px;
+                width: 60px;
                 cursor: pointer;
                 &:active {
                     background: #c7310f;
@@ -155,12 +170,16 @@
                 background: transparent;
                 border: 2px solid #D84727;
                 box-sizing: border-box;
-                max-width: 60px;
-                width: 100%;
-                max-height: 60px;
-                height: 100%;
+                width: 60px;
+                height: 60px;
                 transform: scaleX(-1);
                 cursor: pointer;
+                &:hover {
+                    background: #D84727;
+                    path {
+                        stroke: #fff;
+                    }
+                }
                 &:active {
                     background: #c7310f;
                     path {

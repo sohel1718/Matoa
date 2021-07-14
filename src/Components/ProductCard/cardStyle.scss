@@ -11,7 +11,6 @@
     }
     &:hover > &__bottom {
         display: flex;
-        transition: smoothing;
     }
     &:hover {
         padding-bottom: 0;
@@ -38,6 +37,9 @@
         font-size: 24px;
         line-height: 32px;
         color: #333333;
+        @media only screen and (max-width: 928px) {
+            font-size: 20px;
+        }
         #discount {
             font-family: Taviraj;
             font-style: normal;
@@ -56,6 +58,9 @@
         font-size: 24px;
         line-height: 32px;
         color: #333333;
+        @media only screen and (max-width: 1068px) {
+            font-size: 20px;
+        }
         #cutPrice {
             font-family: Taviraj;
             font-style: normal;

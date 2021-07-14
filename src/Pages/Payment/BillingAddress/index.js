@@ -45,7 +45,7 @@ const rules = {
         ],
 }
 
-const BillingAddress = () => {
+const BillingAddress = ({setCurrent}) => {
     const [formData, setFormData] = useState({});
     const [form] = Form.useForm();
 
@@ -54,6 +54,7 @@ const BillingAddress = () => {
     }
 
     const onFinish = (values) => {
+        setCurrent(1)
         console.log('Received values of form: ', values);
     };
 

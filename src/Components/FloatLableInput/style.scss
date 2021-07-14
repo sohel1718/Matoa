@@ -1,0 +1,28 @@
+.float-lable {
+    margin-bottom: 24px;
+    &__lable {
+        font-family: Taviraj;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 32px;
+        letter-spacing: 0.03em;
+        color: #000000;
+    }
+    .ant-input {
+        border: unset;
+        overflow: unset;
+        border-bottom: 2px solid #333333;
+        padding-left: 0;
+        font-family: Taviraj;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 24px;
+        letter-spacing: 0.03em;
+        color: #999999;
+        &:focus {
+            box-shadow: none;
+        }
+    } 
+}

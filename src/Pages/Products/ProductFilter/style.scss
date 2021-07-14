@@ -1,0 +1,44 @@
+.filter {
+    height: 100%;
+    width: 100%;
+    max-height: 700px;
+    max-width: 200px;
+    &__wrapper {
+        width: 100%;
+        &__box {
+            width: 100%;
+            &__title {
+                font-family: Taviraj;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 18px;
+                line-height: 48px;
+                letter-spacing: 0.02em;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: 100%;
+                img {
+                    height: 16px;
+                    width: 16px;
+                }
+            }
+            &__list-wrapper {
+                border-bottom: 1px solid #ddd;
+                padding-bottom: 10px;
+                &__list {
+                    display: flex;
+                    justify-content: space-between;
+                    color: #999999;
+                    &__left {
+                        display: flex;
+                        align-items: center;
+                        input {
+                            margin-right: 5px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
