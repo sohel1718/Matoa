@@ -1,10 +1,11 @@
-import ProductCard from '../../Components/ProductCard';
+import ProductCardV3 from '../../Components/ProductCardV3';
 import ProductFilter from './ProductFilter';
 import { Select } from 'antd';
 import watch1 from '../../images/Products/Watches/singo-maple.png';
 import watch2 from '../../images/Products/Watches/singo-ebony.png';
 import watch3 from '../../images/Products/Watches/rakai-ebony.png';
 import watch4 from '../../images/Products/Watches/way-kambas-mini-maple.png';
+import getCategory from '../../API';
 import './style.scss';
 
 const data = [
@@ -102,22 +103,31 @@ const Product = () => {
                 <div className="product-container__wrapper__main">
                     <div className="product-container__wrapper__main__header">
                         <div className="product-container__wrapper__main__header__left">
-                            3000 Products found
+                            
                         </div>
                         <div className="product-container__wrapper__main__header__right">
-                            <span>Sort: </span>
-                            <Select defaultValue="High To Low">
-                                <Option value="jack">High To Low</Option>
-                                <Option value="lucy">Low To High</Option>
-                                <Option value="tom">Popularity</Option>
-                            </Select>
+                            <span>Sort By: </span>
+                            <div className="product-container__wrapper__main__header__right__sortWrapper">
+                                <div className="product-container__wrapper__main__header__right__sortWrapper__item">
+                                    Popularity
+                                </div>
+                                <div className="product-container__wrapper__main__header__right__sortWrapper__item">
+                                    Relevence
+                                </div>
+                                <div className="product-container__wrapper__main__header__right__sortWrapper__item">
+                                    High To Low
+                                </div>
+                                <div className="product-container__wrapper__main__header__right__sortWrapper__item">
+                                    Low To High
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div className="product-container__wrapper__main__products">
                         {
                             data.map(product => {
                                 return (
-                                    <ProductCard className="product-container__wrapper__main__products__card" product={product} />
+                                    <ProductCardV3 className="product-container__wrapper__main__products__card" product={product} />
                                 )
                             })
                         }
