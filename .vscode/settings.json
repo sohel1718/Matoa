@@ -1,3 +1,17 @@
 {
-    "liveServer.settings.port": 3001
+  "liveServer.settings.port": 3001,
+  "editor.formatOnType": true,
+  "editor.inlineSuggest.enabled": true,
+  "emmet.triggerExpansionOnTab": true,
+  "emmet.showSuggestionsAsSnippets": true,
+  "editor.snippetSuggestions": "top",
+  "emmet.syntaxProfiles": {
+  
+  },
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact",
+    "razor": "html",
+    "plaintext": "pug"
+},
+  "editor.find.autoFindInSelection": "always"
 }

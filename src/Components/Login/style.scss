@@ -19,6 +19,21 @@
         top: 0;
         right: 0;
         padding: 80px;
+        &__new-acc {
+            color: #333333;
+            font-family: Taviraj;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 34px;
+            letter-spacing: 0.02em;
+            margin-bottom: 20px;
+            cursor: pointer;
+            text-align: center;
+            &:hover {
+                color: #F1DDC9;
+            }
+        }
         &__close {
             width: 100%;
             display: flex;
@@ -77,7 +92,7 @@
                     font-family: Taviraj;
                     font-style: normal;
                     font-weight: normal;
-                    font-size: 60px;
+                    font-size: 50px;
                     line-height: 34px;
                     letter-spacing: 0.02em;
                     color: #333333;
